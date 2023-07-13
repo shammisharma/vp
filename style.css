@@ -37,9 +37,9 @@
 
 html {font-size: 16px;  }
 
-body {background-color: var(--opp-base); color:var(--shade);}
+body {background-color: var(--opp-base); color:var(--shade); overflow-x: hidden;}
 
- 
+section {display: block; width: 100%} 
  
 
 .bodywrap {padding:0 15px}
@@ -193,11 +193,11 @@ body {background-color: var(--opp-base); color:var(--shade);}
 }
 
 
-.pagecontent {padding-top:170px}
+.topcontent {padding-top:170px; overflow: hidden!important; height: 100vh; }
 
 .w90 {width: 90%; display: block; margin:0 auto;}
 
-.themeChange { background-color: var(--base); color:var(--opp-shade);   width: 60px;
+.themechange { background-color: var(--base); color:var(--opp-shade);   width: 60px;
     height: 40px;
     font-size: 30px;
     line-height: 30px;
@@ -206,4 +206,16 @@ body {background-color: var(--opp-base); color:var(--shade);}
     border: 1px solid;
 	cursor:pointer;
 	position:fixed; right:10px; top:100px;}
+
+#cursordiv {display: none!important}
+	.topcontent > #cursordiv {z-index: -1; display: block!important;
+		  width: 30em;
+  height: 30em; 
+background: radial-gradient(circle, rgba(202,158,255,0.8) 0%, rgba(175,238,255,0.3) 60%, var(--opp-base) 100%);
+  position: absolute;
+  filter:blur(30px);
+  transform: translate(-50%, -50%);
+  border-radius: 50%; 
+  transition: 0.1s ease-out;
+	}
  
