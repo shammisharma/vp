@@ -40,7 +40,7 @@
                 </label>
                 <div class="nav-container">
                     <ul class="nav-tabs">
-                        <li class="nav-tab"><a href="#">Home2</a></li>
+                        <li class="nav-tab"><a href="#">Home</a></li>
                         <li class="nav-tab"><a href="#">Products</a></li>
                         <li class="nav-tab"><a href="#">Services</a></li>
                         <li class="nav-tab"><a href="#">FAQ</a></li>
@@ -69,50 +69,14 @@
 
 
 </div>
- 
-<!--   <div class="toggle-container">
-            <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
-        </div>
-
-<script type="text/javascript">
-    
-
-let theme = localStorage.getItem('data-theme');
-const changeThemeToDark = () => {
-    document.documentElement.setAttribute("data-theme", "dark") // set theme to dark
-    localStorage.setItem("data-theme", "dark") // save theme to local storage
-}
-
-const changeThemeToLight = () => {
-    document.documentElement.setAttribute("data-theme", "light") // set theme light
-    localStorage.setItem("data-theme", 'light') // save theme to local storage
-}
-// Get the element based on ID
-const checkbox = document.getElementById("switch");
-// Apply retrived them to the website
-checkbox.addEventListener('change', () => {
-    let theme = localStorage.getItem('data-theme'); // Retrieve saved them from local storage
-    if (theme ==='dark'){
-        changeThemeToLight()
-    }else{
-        changeThemeToDark()
-    }   
-});
-
-</script> -->
-
-
-<!-- <button style="position: fixed; bottom:10px; right: 10px;" onclick="myFunction()">Toggle dark mode</button>
- <script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("darkmode");
-}
-</script> -->
-
- 
-
+  
+  <button
+    type="button"
+    class="themeChange"
+    aria-label="☼"
+  >☼</button>
+  
 </body>
 
-
+<script type="text/javascript" src="main.js"></script>
 </html>
