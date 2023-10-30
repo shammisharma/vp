@@ -61,6 +61,7 @@ button.addEventListener("click", (event) => {
 
 
 let cursorcontainer = document.getElementById("cursorwrap");
+
 let myDiv = document.getElementById("cursordiv");
 //Detect touch device
 function isTouchDevice() {
@@ -81,8 +82,11 @@ const move = (e) => {
     var y = !isTouchDevice() ? e.pageY : e.touches[0].pageY;
   } catch (e) {}
   //set left and top of div based on mouse position
+ 
+if(myDiv) {
   myDiv.style.left = x - 50 + "px";
   myDiv.style.top = y - 50 + "px";
+}
 };
 //For mouse
 cursorcontainer.addEventListener("mousemove", (e) => {

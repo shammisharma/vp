@@ -1,9 +1,9 @@
  
 	
-	* {font-family: 'Prompt', sans-serif; margin:0; padding:0}
+* {font-family: 'Prompt', sans-serif; margin:0; padding:0}
 
 :root {
-	--xlarge-size : 3rem ;
+--xlarge-size : 3rem ;
 --large-size : 2rem ;
 --medium-size : 1.25rem ;
 --default-size : 1rem ;
@@ -39,14 +39,14 @@ html {font-size: 16px;  }
 
 body {background-color: var(--opp-base); color:var(--shade); overflow-x: hidden;}
 
-section {display: block; width: 100%} 
+section {display: block; width: 100%;} 
  
 
 .bodywrap {padding:0 15px}
 
 .navsec {
 	width:90%; display:block; height:80px; background-color: var(--base-opacity); 
-    backdrop-filter: blur(3px); margin:0 auto; position: absolute; transform: translateX(-50%);
+   -webkit-backdrop-filter: blur(3px);   backdrop-filter: blur(3px);margin:0 auto; position: absolute; transform: translateX(-50%);
     left: 50%; border-radius: 45px; top:20px;
 }
  
@@ -69,7 +69,7 @@ section {display: block; width: 100%}
 }
 
 .logo {
-	height: 60px; max-width: 85%;
+	  max-width: 200px;
 }
 
 .nav-tabs {
@@ -197,8 +197,8 @@ section {display: block; width: 100%}
 
 .w90 {width: 90%; display: block; margin:0 auto;}
 
-.sec1 {background-color: #fff; padding:20px; border-top-left-radius: 20px; border-top-right-radius: 20px;  width: 100%; display: flex;position: sticky; margin-top:40px; top:40px }
-
+.sec1 {background-color: #fff; padding:20px; border-top-left-radius: 20px; border-top-right-radius: 20px; height: 100vh;  width: 100%; display: flex;}
+.isticky {position: sticky; margin-top:40px; top:90px; z-index:0 }
 .sec1 .titleblock {font-size: var(--xlarge-size); width: 40%; }
 .sec1 .servicesblock {font-size: var(--default-size); width: 60%}
 
