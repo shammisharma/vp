@@ -176,11 +176,11 @@ section {display: block; width: 100%;overflow-x: hidden!important;}
 		transform: translate3d(0, -6px, 0) rotate(-45deg);
 	}
 
-	#menuToggle:not(:checked) ~ .nav-container { transform: translateX(120%);}
+	#menuToggle:not(:checked) ~ .nav-container {   display: none}
 	#menuToggle:checked ~ .nav-container {
 		z-index: -1;
 		display: flex;
-		animation: menu-slide-left 0.3s ease;
+		animation: menu-slide-left2 0.3s ease;
 	}
 	@keyframes menu-slide-left {
 		0% {
@@ -197,10 +197,10 @@ section {display: block; width: 100%;overflow-x: hidden!important;}
 
 .w90 {width: 90%; display: block; margin:0 auto;}
 
-.sec1 {background-color: #fff; padding:20px; border-top-left-radius: 20px; border-top-right-radius: 20px; height: 100vh;  width: 100%; display: flex;}
-.isticky {position: sticky; margin-top:40px; top:90px; z-index:0 }
-.sec1 .titleblock {font-size: var(--xlarge-size); width: 40%; }
-.sec1 .servicesblock {font-size: var(--default-size); width: 60%}
+.servs-sec {background: var(--opp-shade); padding:20px; border-top-left-radius: 20px; border-top-right-radius: 20px;  width: 100%; display: flex;margin-bottom:40px  }
+ 
+.servs-sec .titleblock {font-size: var(--xlarge-size); width: 40%; font-weight:300 }
+.servs-sec .servicesblock {font-size: var(--default-size); width: 60%}
 
 .themechange { background-color: var(--base); color:var(--opp-shade);   width: 60px;
     height: 40px;
