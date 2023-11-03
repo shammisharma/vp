@@ -45,7 +45,7 @@ section {display: block; width: 100%;overflow-x: hidden!important;}
 .bodywrap {padding:0 15px}
 
 .navsec {
-	width:90%; display:block; height:80px; background-color: var(--base-opacity); 
+	width:90%; display:block;   background-color: var(--base-opacity); 
    -webkit-backdrop-filter: blur(3px);   backdrop-filter: blur(3px);margin:0 auto; position: absolute; transform: translateX(-50%);
     left: 50%; border-radius: 45px; top:20px;
 }
@@ -55,10 +55,8 @@ section {display: block; width: 100%;overflow-x: hidden!important;}
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
-    margin: auto; 
-    height: 80px; 
-    padding: 0 25px;
+    justify-content: space-between; 
+    padding: 5px 25px;
     z-index: 2; 
    overflow-x: hidden!important;
 }
