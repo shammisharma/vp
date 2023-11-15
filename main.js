@@ -99,7 +99,7 @@ cursorcontainer.addEventListener("touchmove", (e) => {
 
 
 
-function myFunction() {
+function hideScroll() {
    var element = document.getElementById("pagebody");
    element.classList.toggle("noscroll");
 }
