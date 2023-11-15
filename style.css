@@ -271,18 +271,14 @@ section
 {
 	background-color: var(--opp-shade);
 	padding: 20px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	height: 100vh;
-	width: 100%;
+	border-radius: 20px;	 
 	display: flex;
 }
 
 .isticky
 {
-	position: sticky;
-	margin-top: 40px;
-	top: 90px;
+	position: sticky; 
+	top: 60px;
 	z-index: 0;
 }
 
