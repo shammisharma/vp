@@ -99,6 +99,13 @@ cursorcontainer.addEventListener("touchmove", (e) => {
 
 
 
+<script>
+function myFunction() {
+   var element = document.getElementById("pagebody");
+   element.classList.toggle("noscroll");
+}
+</script>
+
 
 
 
