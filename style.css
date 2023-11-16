@@ -17,11 +17,10 @@
 {
 	--base: hsl(0,0%,92%);
 	--shade: hsl(0,0%,85%);
-	--base-opacity: hsla(0,0%,100%, 0.8);
 	--balance: hsl(0,0%,48%);
 	--opp-base: hsl(0,0%,15%);
 	--opp-shade: hsl(0,0%,8%);
-	--base-opacity: hsla(0,0%,0%, 0.8);
+	--base-opacity: hsla(0,0%,0%, 0.95);
 }
 
 [data-theme="light"]
@@ -66,11 +65,12 @@ section
 	-webkit-backdrop-filter: blur(3px);
 	backdrop-filter: blur(3px);
 	margin: 0 auto;
-	position: absolute;
+	position: fixed;
 	transform: translateX(-50%);
 	left: 50%;
 	border-radius: 45px;
 	top: 20px;
+	z-index: 9;
 }
 
 .nav-wrapper
@@ -144,7 +144,8 @@ section
 		right: 0;
 		width: 100%;
 		height: calc(100vh - 40px);
-		background: var(--opp-shade);
+		background: var(--base-opacity);
+		backdrop-filter: blur(1px);
 		transition: all 0.2s ease-in;
 		border-radius: 35px;
 	}
@@ -278,7 +279,7 @@ section
 .isticky
 {
 	position: sticky; 
-	top: 60px;
+	top: 110px;
 	z-index: 0;
 }
 
@@ -346,3 +347,45 @@ section
 
 .noscroll {overflow: hidden;}
 
+.ribbon1 {background:teal; color:#fff;   white-space:nowrap; transform:rotate(-5deg);height:33px;   overflow:hidden; margin-top:80px}
+.ribbon1 span:nth-child(even) {color:#1b1b1b}
+.ribbon1 span {padding:0 15px;font-size:30px;}
+
+.ribbon1 .content {  position: absolute;top:0;  
+  -webkit-animation: move-left 8s linear infinite; /* Safari 4.0 - 8.0 */
+  white-space: nowrap;
+  animation: move-left 8s linear infinite alternate;
+}
+
+@keyframes move-left{
+  
+  from {
+    left: 0;
+  }
+  to {
+    left: -200px;
+  }
+  
+}
+
+
+
+.ribbon2 {background:orange;     white-space:nowrap; transform:rotate(5deg); height:33px;     margin-top:-30px; overflow:hidden  }
+.ribbon2 span:nth-child(even) {color:#1b1b1b}
+.ribbon2 span {padding:0 15px; font-size:30px}
+
+.ribbon2 .content { position: absolute; top:0;
+-webkit-animation: move-right 8s linear infinite; /* Safari 4.0 - 8.0 */
+  white-space: nowrap;
+  animation: move-right 8s linear infinite alternate;
+}
+
+@keyframes move-right{
+  from {
+    right: 0;
+  }
+  to {
+    right: -200px;
+  }
+  
+}
