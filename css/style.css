@@ -1,6 +1,6 @@
 *
 {
-	font-family: 'Prompt', sans-serif;
+	font-family: 'Prompt', Calibri, Tahoma, sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -11,6 +11,7 @@
 	--large-size: 2rem;
 	--medium-size: 1.25rem;
 	--default-size: 1rem;
+	--small-size:0.75rem;
 	--accent1: hsl(199,77%,49%);
 	--accent2: hsl(241,91%,64%);
 }
