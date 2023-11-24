@@ -11,6 +11,8 @@
 	--large-size: 2rem;
 	--medium-size: 1.25rem;
 	--default-size: 1rem;
+	--accent1: hsl(199,77%,49%);
+	--accent2: hsl(241,91%,64%);
 }
 
 [data-theme="dark"]
@@ -32,6 +34,8 @@
 	--opp-shade: hsl(0,0%,85%);
 	--base-opacity: hsla(0,0%,100%, 0.8);
 }
+
+
 
 html
 {
