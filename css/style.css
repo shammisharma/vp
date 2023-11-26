@@ -23,16 +23,20 @@
 	--balance: hsl(0,0%,48%);
 	--opp-base: hsl(0,0%,15%);
 	--opp-shade: hsl(0,0%,8%);
-	--base-opacity: hsla(0,0%,0%, 0.95);
+	--opp-shade2: hsl(0,0%,4%);
+	--opp-shade3: hsl(0,0%,12%);
+	--base-opacity: hsla(0,0%,0%, 0.90);
 }
 
 [data-theme="light"]
 {
 	--base: hsl(0,0%,15%);
 	--shade: hsl(0,0%,8%);
-	--base-opacity: hsla(0,0%,0%, 0.8);
-	--opp-base: hsl(0,0%,92%);
-	--opp-shade: hsl(0,0%,85%);
+	--balance: hsl(0,0%,48%);
+	--opp-base: hsl(0,0%,90%);
+	--opp-shade: hsl(0,0%,96%);
+	--opp-shade2: hsl(0,0%,100%);
+	--opp-shade3: hsl(0,0%,94%);
 	--base-opacity: hsla(0,0%,100%, 0.8);
 }
 
@@ -137,6 +141,16 @@ section
 {
 	display: none;
 }
+
+.title {
+	font-size:   clamp(2rem, 10vw, 5rem);	
+	font-weight: 300; line-height: 1.2; font-weight: bold;}
+.gradtext {  background: var(--accent1);
+	background: -webkit-linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
+	background: -moz-linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
+	background: linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;}
 
 @media screen and (max-width: 800px)
 {
@@ -281,6 +295,8 @@ section
 	display: flex;
 }
 
+ 
+
 .isticky
 {
 	position: sticky; 
@@ -289,16 +305,13 @@ section
 }
 
 .servs-sec .titleblock
-{
-	font-size: var(--xlarge-size);
-	width: 40%;
-	font-weight: 300;
+{width: 40%;
 }
 
 .servs-sec .servicesblock
 {
 	font-size: var(--default-size);
-	width: 60%;
+	width: 60%; min-height: calc(100vh - 220px);
 }
 
 .themechange
@@ -352,9 +365,9 @@ section
 
 .noscroll {overflow: hidden;}
 
-.ribbon1 {background:teal; color:#fff;   white-space:nowrap; transform:rotate(-5deg);height:33px;   overflow:hidden; margin-top:80px}
-.ribbon1 span:nth-child(even) {color:#1b1b1b}
-.ribbon1 span {padding:0 15px;font-size:30px;}
+.ribbon1 {background:var(--accent1);  white-space:nowrap; transform:rotate(-3deg);height:42px;   overflow:hidden; margin-top:80px}
+.ribbon1 span:nth-child(even), .ribbon2 span:nth-child(even) {color:#1b1b1b}
+.ribbon1 span, .ribbon2 span {padding:0 15px;font-size:1.75rem;  color:#fff; }
 
 .ribbon1 .content {  position: absolute;top:0;  
   -webkit-animation: move-left 8s linear infinite; /* Safari 4.0 - 8.0 */
@@ -362,22 +375,9 @@ section
   animation: move-left 8s linear infinite alternate;
 }
 
-@keyframes move-left{
-  
-  from {
-    left: 0;
-  }
-  to {
-    left: -200px;
-  }
-  
-}
-
-
-
-.ribbon2 {background:orange;     white-space:nowrap; transform:rotate(5deg); height:33px;     margin-top:-30px; overflow:hidden  }
-.ribbon2 span:nth-child(even) {color:#1b1b1b}
-.ribbon2 span {padding:0 15px; font-size:30px}
+.ribbon2 {background:var(--accent2);     white-space:nowrap; transform:rotate(3deg); height:42px;     margin-top:-20px; overflow:hidden  }
+ 
+ 
 
 .ribbon2 .content { position: absolute; top:0;
 -webkit-animation: move-right 8s linear infinite; /* Safari 4.0 - 8.0 */
@@ -385,12 +385,23 @@ section
   animation: move-right 8s linear infinite alternate;
 }
 
+@keyframes move-left{
+  
+	from {
+	  left: 0;
+	}
+	to {
+	  left: -300px;
+	}
+	
+  }
+
 @keyframes move-right{
   from {
     right: 0;
   }
   to {
-    right: -200px;
+    right: -300px;
   }
   
 }
