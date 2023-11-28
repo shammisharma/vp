@@ -292,7 +292,7 @@ section
 	background-color: var(--opp-shade);
 	padding: 20px;
 	border-radius: 20px;	 
-	display: flex;
+	display: flex; flex-wrap:wrap;
 }
 
  
@@ -305,16 +305,16 @@ section
 }
 
 .servs-sec .titleblock
-{width: 40%;
+{flex: 1 1 40%;   min-width: 40%;  
 }
 
 .servs-sec .servicesblock
 {
 	font-size: var(--default-size);
-	width: 60%; min-height: calc(100vh - 220px);
+	flex: 1.5 1 600px; min-height: calc(100vh - 220px);
 }
 
-.servlist {display: grid; grid-template-columns: repeat(auto-fit, minmax(min-content, 400px)); gap: 15px;}
+.servlist {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, calc(52% - 40px))); gap: 15px;}
 .servlist li {font-size: 1.5rem;  font-weight: 300; list-style: none;line-height: 1.3;
     padding-left: 30px;}
 .servlist li:before {content: "\eed6";font-family: "IcoFont"; color: var(--accent2);
