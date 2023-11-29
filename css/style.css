@@ -289,8 +289,8 @@ section
 
 .servs-sec
 {
-	background-color: var(--opp-shade);
-	padding: 20px;
+	background:linear-gradient(-45deg, var(--opp-shade) 70%, var(--opp-base)); 
+	padding: 40px;
 	border-radius: 20px;	 
 	display: flex; flex-wrap:wrap;
 }
