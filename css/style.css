@@ -142,15 +142,6 @@ section
 	display: none;
 }
 
-.title {
-	font-size:   clamp(2rem, 10vw, 5rem);	
-	font-weight: 300; line-height: 1.2; font-weight: bold;}
-.gradtext {  background: var(--accent1);
-	background: -webkit-linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
-	background: -moz-linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
-	background: linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;}
 
 @media screen and (max-width: 800px)
 {
@@ -290,7 +281,7 @@ section
 .servs-sec
 {
 	background:linear-gradient(-45deg, var(--opp-shade) 70%, var(--opp-base)); 
-	padding: 40px;
+	padding: 20px;
 	border-radius: 20px;	 
 	display: flex; flex-wrap:wrap;
 }
@@ -304,6 +295,18 @@ section
 	z-index: 0;
 }
 
+
+
+.title {
+	font-size:   clamp(2rem, 4.3vw, 6rem);	
+	font-weight: 300; line-height: 1.2; font-weight: bold;}
+.gradtext {  background: var(--accent1);
+	background: -webkit-linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
+	background: -moz-linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
+	background: linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;}
+
 .servs-sec .titleblock
 {flex: 1 1 40%;   min-width: 40%;  
 }
@@ -314,8 +317,8 @@ section
 	flex: 1.5 1 600px; min-height: calc(100vh - 220px);
 }
 
-.servlist {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, calc(52% - 40px))); gap: 15px;}
-.servlist li {font-size: 1.5rem;  font-weight: 300; list-style: none;line-height: 1.3;
+.servlist {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, calc(52% - 40px))); gap: 15px 20px;}
+.servlist li {font-size:   clamp(1.2rem, 1.5vw, 1.5rem);	  font-weight: 300; list-style: none;line-height: 1.3;
     padding-left: 30px;}
 .servlist li:before {content: "\eed6";font-family: "IcoFont"; color: var(--accent2);
 	font-weight: normal;
