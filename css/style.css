@@ -298,7 +298,7 @@ section
 
 
 .title {
-	font-size:   clamp(2rem, 4.3vw, 6rem);	
+	font-size:   clamp(2rem, 4.3vw, 6rem);	padding-right:40px;
 	font-weight: 300; line-height: 1.2; font-weight: bold;}
 .gradtext {  background: var(--accent1);
 	background: -webkit-linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
@@ -306,6 +306,13 @@ section
 	background: linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;}
+
+
+	.gradbg {  background: var(--accent1);
+		background: -webkit-linear-gradient(to right, var(--accent1) 0%, var(--accent2) 70%);
+		background: -moz-linear-gradient(to right, var(--accent1) 0%, var(--accent2) 70%);
+		background: linear-gradient(to right, var(--accent1) 0%, var(--accent2) 70%);
+		 }
 
 .servs-sec .titleblock
 {flex: 1 1 40%;   min-width: 40%;  
