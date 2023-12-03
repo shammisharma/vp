@@ -47,6 +47,11 @@ html
 	font-size: 16px;
 }
 
+
+@media(max-width:1023px) {
+	html {font-size: 14px;}
+}
+
 body
 {
 	background-color: var(--opp-base);
@@ -332,6 +337,18 @@ section
 	position: absolute; 
     margin-left: -30px;}
 
+@media screen and (max-height: 700px) {
+
+	.title { font-size: 1.5rem; padding-right: 0; }
+	.servlist {gap:10px}
+	.servlist li {font-size:  1rem;	  font-weight: 300; list-style: none;line-height: 1.2;
+		padding-left: 25px;}
+		.servlist li:before { 
+			margin-left: -25px;}
+
+ }
+
+
 .themechange
 {
 	background-color: var(--base);
@@ -388,9 +405,9 @@ section
 .ribbon1 span, .ribbon2 span {padding:0 15px;font-size:1.75rem;  color:#fff; }
 
 .ribbon1 .content {  position: absolute;top:0;  
-  -webkit-animation: move-left 8s linear infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation: move-left 15s linear infinite; /* Safari 4.0 - 8.0 */
   white-space: nowrap;
-  animation: move-left 8s linear infinite alternate;
+  animation: move-left 15s linear infinite alternate;
 }
 
 .ribbon2 {background:var(--accent2);     white-space:nowrap; transform:rotate(3deg); height:42px;     margin-top:-20px; overflow:hidden  }
@@ -398,9 +415,9 @@ section
  
 
 .ribbon2 .content { position: absolute; top:0;
--webkit-animation: move-right 8s linear infinite; /* Safari 4.0 - 8.0 */
+-webkit-animation: move-right 15s linear infinite; /* Safari 4.0 - 8.0 */
   white-space: nowrap;
-  animation: move-right 8s linear infinite alternate;
+  animation: move-right 15s linear infinite alternate;
 }
 
 @keyframes move-left{
@@ -409,7 +426,7 @@ section
 	  left: 0;
 	}
 	to {
-	  left: -300px;
+	  left: -100ch;
 	}
 	
   }
@@ -419,19 +436,21 @@ section
     right: 0;
   }
   to {
-    right: -300px;
+    right: -100ch;
   }
   
 }
 
+
+.half-grid { display: flex;   }
+.left-part {width: 65%;} 
+.right-part {width: 35%;}
 .wrap {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.glide__slide {
-  border: 1px solid black;
-  text-align: center;
+.glide__slide {  
 }
 
  

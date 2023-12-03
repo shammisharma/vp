@@ -126,5 +126,24 @@ new Glide('#glide4', {
 }).mount();
 
 
+new Glide('#testimonials', {
+  type: 'carousel',
+  startAt: 0,
+  autoplay: 5000,
+  hoverpause: true,
+  gap: 20,
+  // animationTimingFunc: ease,
+  perView: 3,
+  breakpoints: {
+    800: {
+      perView: 2
+    },
+  600: {
+      perView: 1
+    }
+  }
+}).mount();
+
+
 
 
