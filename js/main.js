@@ -129,19 +129,11 @@ new Glide('#glide4', {
 new Glide('#testimonials', {
   type: 'carousel',
   startAt: 0,
-  autoplay: 5000,
-  hoverpause: true,
-  gap: 20,
-  // animationTimingFunc: ease,
-  perView: 3,
-  breakpoints: {
-    800: {
-      perView: 2
-    },
-  600: {
-      perView: 1
-    }
-  }
+  perView: 1,
+  animationDuration: 150,
+  dragThreshold: 1, 
+  peek: { before: 80, after: 80 },
+  gap: 15
 }).mount();
 
 

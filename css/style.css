@@ -479,9 +479,9 @@ section
 }
 
 button.glide__arrow {
-  background-color: red;
+  background-color: transparent;
   border: none;
-  font-size: 11px;
+  font-size: 1.75rem;
 }
 button.glide__arrow--left {
   left: 5px;
@@ -489,4 +489,45 @@ button.glide__arrow--left {
 button.glide__arrow--right {
   right: 5px;
 }
+
+
+
+
+.testimonials {position:relative; max-width: 900px; display: block; margin: 0 auto;}
+
+.testimonials:before {
+  content:'';
+  background:linear-gradient(90deg, black, transparent 98%);
+  height:calc(100% - 30px); width:60px;
+  position:absolute;
+  z-index:1 ; left:0; top:50%;
+  transform:translateY(-50%)
+}
+
+.testimonials:after {
+  content:'';
+  background:linear-gradient(90deg, transparent, black 65%);
+  height:calc(100% - 30px); width:60px;
+  position:absolute;
+  z-index:1 ; right:0; top:50%;
+  transform:translateY(-50%)
+}
+
+.review-slide {	 
+	height: inherit;
+   background: #2b2b2b;
+ color:#fff;
+ padding:20px; line-height:1.5;
+ transform: translate3d(0, 0, 0);
+ border-radius:20px;
+}
+
+.review-slide span {
+	display:block; text-align:right; margin-top:20px
+}
+
+
+
+
+
 
