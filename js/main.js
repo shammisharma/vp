@@ -133,7 +133,12 @@ new Glide('#testimonials', {
   animationDuration: 150,
   dragThreshold: 1, 
   peek: { before: 80, after: 80 },
-  gap: 15
+  gap: 15,
+  breakpoints: {
+  400: {
+    peek: { before: 30, after: 30 }
+    }
+  }
 }).mount();
 
 
