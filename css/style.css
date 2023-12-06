@@ -325,7 +325,7 @@ section
 .servs-sec .servicesblock
 {
 	font-size: var(--default-size);
-	flex: 1.5 1 600px; min-height: calc(50vh);
+	flex: 1.5 1 600px; min-height: calc(60vh);
 }
 
 .servlist {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, calc(52% - 40px))); gap: 15px 20px;}
@@ -336,7 +336,7 @@ section
 	position: absolute; 
     margin-left: -30px;}
 
-@media screen and (max-height: 700px) {
+@media screen and (max-width:399px) and (max-height: 700px) {
 
 	.title { font-size: 1.5rem; padding-right: 0; }
 	.servlist {gap:10px}
