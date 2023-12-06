@@ -135,7 +135,7 @@ new Glide('#testimonials', {
   peek: { before: 80, after: 80 },
   gap: 15,
   breakpoints: {
-  400: {
+  500: {
     peek: { before: 30, after: 30 }
     }
   }

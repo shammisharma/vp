@@ -73,8 +73,7 @@ section
 .navsec
 {
 	width: 90%;
-	display: block;
-	height: 80px;
+	display: block; 
 	background-color: var(--base-opacity);
 	-webkit-backdrop-filter: blur(3px);
 	backdrop-filter: blur(3px);
@@ -94,8 +93,7 @@ section
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: space-between;
-	margin: auto;
-	height: 80px;
+	margin: auto; 
 	padding: 0 25px;
 	z-index: 2;
 }
@@ -289,9 +287,10 @@ section
 	padding: 20px;
 	border-radius: 20px;	 
 	display: flex; flex-wrap:wrap;
+	overflow: hidden; max-height: 100vh;
 }
 
- 
+.servs-fx {  opacity:0.8; margin-top: 20vh;  width:100% }
 
 .isticky
 {
@@ -326,7 +325,7 @@ section
 .servs-sec .servicesblock
 {
 	font-size: var(--default-size);
-	flex: 1.5 1 600px; min-height: calc(100vh - 220px);
+	flex: 1.5 1 600px; min-height: calc(50vh);
 }
 
 .servlist {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, calc(52% - 40px))); gap: 15px 20px;}
@@ -498,8 +497,8 @@ button.glide__arrow--right {
 
 .testimonials:before {
   content:'';
-  background:linear-gradient(90deg, var(--base), transparent 100%);
-  height:100%; width:55px;
+  background:linear-gradient(90deg, var(--opp-base), transparent 80%);
+  height:calc(100% + 10px); width:75px;
   position:absolute;
   z-index:1 ; left:0; top:50%;
   transform:translateY(-50%)
@@ -507,8 +506,8 @@ button.glide__arrow--right {
 
 .testimonials:after {
   content:'';
-  background:linear-gradient(90deg, transparent,  var(--base) 100%);
-  height:100%; width:55px;
+  background:linear-gradient(90deg, transparent 20%,  var(--opp-base) 100%);
+  height:calc(100% + 10px); width:75px;
   position:absolute;
   z-index:1 ; right:0; top:50%;
   transform:translateY(-50%)
@@ -525,13 +524,28 @@ button.glide__arrow--right {
  font-size: 1.2rem;
 }
 
+.review-slide span{	font-size: 1rem;font-weight: normal; }
+.review-slide span b{	font-weight: normal; color: var(--accent2); }
+
 .review-slide span {
 	display:block; text-align:right; margin-top:20px
 }
 
-.rvw-left {  left: 5px;}
-.rvw-right{ right:5px;}
+.rvw-left {  left: 40%;}
+.rvw-right{ right:40%;}
+
+.rvw-arrow {
+	background-color: transparent;
+	border: none;
+	font-size: 1.75rem;
+	color:var(--shade);
+	font-weight: bold;
+	position:absolute;
+	cursor: pointer;
+	margin-top: 10px;
+}
 
 
 
+@media(max-width:500px) {  .testimonials:before, .testimonials:after { width:35px  } }
 
