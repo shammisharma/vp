@@ -364,6 +364,7 @@ section {
   .readmore span {font-size: 2rem;padding-left: 5px;}
  
  
+ 
 
 @media screen and (max-width:399px) and (max-height: 700px) {
 
@@ -396,8 +397,9 @@ section {
 	color: var(--opp-shade);
 	width: 40px;
 	height: 40px;
-	font-size: 20px;
-	line-height: 39px;
+	font-size: 22px;
+	line-height: 41px;
+	font-weight: 300;
 	border-radius: 50%;
 	cursor: pointer;
 	border: none;
@@ -420,20 +422,7 @@ section {
 	transition: 0.1s ease-out;
 }
 
-@media(max-width:576px) {
-	.logo {
-		max-width: 120px;
-	}
 
-	.servs-sec {
-		flex-wrap: wrap;
-	}
-
-	.servs-sec .titleblock,
-	.servs-sec .servicesblock {
-		width: 100%;
-	}
-}
 
 .noscroll {
 	overflow: hidden;
@@ -656,7 +645,28 @@ button.glide__arrow--right {
 	margin-top: 10px;
 }
 
+@media(max-width:576px) {
+	.logo {
+		max-width: 120px;
+	}
 
+	.isticky {
+		top: 90px;
+	}
+	.servs-sec {
+		flex-wrap: wrap;
+	}
+.servs-fx {
+	top:70%; left:-65%
+}
+	.servs-sec .titleblock,
+	.servs-sec .servicesblock {
+		width: 100%;
+	}
+
+	.ribbon1,	.ribbon2 {height: 26px; margin-top: 10px;}
+	.ribbon1 span,	.ribbon2 span {font-size: 1.25rem;}
+}
 
 @media(max-width:500px) {
 

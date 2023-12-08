@@ -14,12 +14,23 @@ function getCurrentTheme({ localStorageTheme, systemThemeDark }) {
 /**
 * Utility function to update the button text and aria-label.
 */
+
+let themeicon = document.getElementById('themeicon');
+
 function updateButton({ buttonEl, isDark }) {
-  const newCta = isDark ? "☼" : "☾";
+ 
   // use an aria-label if you are omitting text on the button
   // and using a sun/moon icon, for example
-  buttonEl.setAttribute("aria-label", newCta);
-  buttonEl.innerText = newCta;
+ 
+if(isDark) {
+  themeicon.classList.add('icofont-sun');
+  themeicon.classList.remove('icofont-moon');
+}
+else{
+  themeicon.classList.add('icofont-moon');
+  themeicon.classList.remove('icofont-sun');
+}
+   
 }
 
 
