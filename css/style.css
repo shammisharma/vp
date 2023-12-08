@@ -276,6 +276,7 @@ section {
 	font-weight: 300;
 	line-height: 1.2;
 	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 .gradtext {
@@ -336,9 +337,21 @@ section {
 	color:var(--base);
 	text-decoration: none; 
 	font-size: 1.1rem;
+	border:2px solid var(--base);
+	border-radius: 40px;
+	background: var(--accent1);
+	background: -webkit-linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
+	background: -moz-linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
+	background: linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	max-width: 160px;
+	margin:30px 0;
+	text-align: center;
+	display: flex;
   }
  
-  .readmore i {color:var(--base); font-size: 2.5rem;}
+ 
 
 @media screen and (max-width:399px) and (max-height: 700px) {
 
