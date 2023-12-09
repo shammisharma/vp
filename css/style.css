@@ -645,6 +645,12 @@ button.glide__arrow--right {
 	margin-top: 10px;
 }
 
+.vpform {display:flex; gap: 30px;} 
+.vpform .row {width: 50%;}
+.vpform label {display: block; font-weight: 300; color: var(--base);margin-bottom: 5px;}
+.vpform input {width: 90%; border:none; height:30px; border-radius: 30px; background-color: var(--opp-base); color: var(--base); padding:3px 15px; margin-bottom: 30px;  }
+
+
 @media(max-width:576px) {
 	.logo {
 		max-width: 120px;
