@@ -134,7 +134,8 @@ section {
 	display: none;
 }
 
-.bigfont {font-size: var(--xlarge-size); line-height: 1;}
+.xbigfont {font-size: var(--xlarge-size); line-height: 1;}
+.bigfont {font-size: var(--large-size); line-height: 1;}
 .mediumfont {font-size: var(--medium-size); line-height: 1.1;}
 .greytext {color:var(--balance)}
 @media screen and (max-width: 800px) {
@@ -649,6 +650,14 @@ button.glide__arrow--right {
 	margin-top: 10px;
 }
 
+.textblock {
+	 
+}
+.counterwrap {display: flex; gap:15px}
+.counterbox {background-color: var(--opp-base); padding:15px  15px 25px 15px; border-radius: 20px; font-size: 1.4rem; line-height: 1.2;}
+.counterbox span { font-size: 4rem; line-height: 1; font-weight: bold; display: block; 
+	  padding:10px; border-radius: 5px;
+margin-bottom: 20px;}
 .vpform {display:flex; flex-wrap:wrap; gap:20px }
 .vpform .row{padding:0 10px; min-width:calc(50% - 40px)}
 .vpform .row label {display:block; margin:0 0 5px 5px; color: var(--base);}
@@ -680,16 +689,19 @@ button.glide__arrow--right {
 		width: 100%;
 	}
 
+	.testimonials:before,
+	.testimonials:after {
+		width: 35px
+	}
 	.ribbon1,	.ribbon2 {height: 26px; margin-top: 10px;}
 	.ribbon1 span,	.ribbon2 span {font-size: 1.25rem;}
 .half-grid {flex-direction: column;}
 	.width60, .width40 {width: 100%;}
 }
 
-@media(max-width:500px) {
-
-	.testimonials:before,
-	.testimonials:after {
-		width: 35px
-	}
+@media(max-width:768px) {
+	.half-grid {flex-direction: column;}
+	.width60, .width40 {width: 100%;}
 }
+
+ 
