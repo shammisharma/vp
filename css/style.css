@@ -40,6 +40,7 @@
 
 html {
 	font-size: 16px;
+	font-weight: 300;
 }
 
 
@@ -133,7 +134,9 @@ section {
 	display: none;
 }
 
-
+.bigfont {font-size: var(--xlarge-size); line-height: 1;}
+.mediumfont {font-size: var(--medium-size); line-height: 1.1;}
+.greytext {color:var(--balance)}
 @media screen and (max-width: 800px) {
 	.nav-container {
 		position: fixed;
@@ -227,7 +230,7 @@ section {
 		animation: menu-slide-left2 0.3s ease;
 	}
 
-	@	keyframes menu-slide-left {
+	@keyframes menu-slide-left {
 		0% {
 			transform: translateX(200px);
 		}
@@ -504,14 +507,15 @@ section {
 
 .half-grid {
 	display: flex;
+	gap:30px
 }
 
-.left-part {
-	width: 65%;
+.width60 {
+	width: 60%;
 }
 
-.right-part {
-	width: 35%;
+.width40 {
+	width: 40%;
 }
 
 .wrap {
@@ -645,10 +649,16 @@ button.glide__arrow--right {
 	margin-top: 10px;
 }
 
-.vpform {display:flex; gap: 30px;} 
-.vpform .row {width: 50%;}
-.vpform label {display: block; font-weight: 300; color: var(--base);margin-bottom: 5px;}
-.vpform input {width: 90%; border:none; height:30px; border-radius: 30px; background-color: var(--opp-base); color: var(--base); padding:3px 15px; margin-bottom: 30px;  }
+.vpform {display:flex; flex-wrap:wrap; gap:20px }
+.vpform .row{padding:0 10px; min-width:calc(50% - 40px)}
+.vpform .row label {display:block; margin:0 0 5px 5px; color: var(--base);}
+.vpform .row input {width:calc(100% - 30px);  padding:10px 15px; border-radius:30px; border:none; background:var(--opp-base); color:var(--base)  }
+.vpform .row textarea {width:calc(100% - 30px);  padding:10px 15px; border-radius:30px; border:none; background:var(--opp-base); color:var(--base) }
+.vpform .full-width {min-width:calc(100% - 40px);   }
+
+@media(max-width:576px) {
+  .vpform {flex-direction:column}
+}
 
 
 @media(max-width:576px) {
@@ -672,6 +682,8 @@ button.glide__arrow--right {
 
 	.ribbon1,	.ribbon2 {height: 26px; margin-top: 10px;}
 	.ribbon1 span,	.ribbon2 span {font-size: 1.25rem;}
+.half-grid {flex-direction: column;}
+	.width60, .width40 {width: 100%;}
 }
 
 @media(max-width:500px) {
