@@ -705,4 +705,13 @@ button.glide__arrow--right {
 	.width60, .width40 {width: 100%;}
 }
 
+@media (min-width:320px) and (max-width:767px), 
+@media (min-width:1025px) and (max-width:1280px) {
+	.counterwrap {flex-wrap: wrap;}
+	.counterbox {display: flex;width: 100%;
+		align-items: center;}
+		.counterbox p {margin-left: 20px;}
+		.counterbox span {padding:0}
+}
+
  
