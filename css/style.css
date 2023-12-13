@@ -705,13 +705,34 @@ button.glide__arrow--right {
 	.width60, .width40 {width: 100%;}
 }
 
-@media (min-width:320px) and (max-width:767px), 
+@media (min-width:320px) and (max-width:767px) {
+	.counterwrap {flex-wrap: wrap;}
+	.counterbox {display: flex;width: 100%;
+		align-items: center;}
+		.counterbox p {margin-left: 20px; padding-top: 0px;}
+		.counterbox span {padding:0}
+} 
 @media (min-width:1025px) and (max-width:1280px) {
 	.counterwrap {flex-wrap: wrap;}
 	.counterbox {display: flex;width: 100%;
 		align-items: center;}
-		.counterbox p {margin-left: 20px;}
+		.counterbox p {margin-left: 20px; padding-top: 0px;}
 		.counterbox span {padding:0}
 }
 
- 
+.btm-wrap2 {display: flex;
+    max-width: 70vw;
+    width: auto;
+    gap: 100px;
+    border: 1px solid var(--balance);
+    padding: 30px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto} 
+.email-div, .link-div {font-size: 1.5rem; line-height: 1.5; color:var(--base)}
+.email-div a, .link-div a { color:var(--base); text-decoration: none; transition: all 0.15s ease-in;}
+.email-div a:hover {color:var(--balance)}
+.link-div i {color: var(--accent1); font-size: 2rem;}
