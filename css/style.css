@@ -36,7 +36,7 @@
 	--base-opacity: hsla(0, 0%, 100%, 0.8);
 }
 
-
+a{text-decoration: none; color: inherit;}
 
 html {
 	font-size: 16px;
@@ -362,8 +362,12 @@ section {
 	display: flex;
 	align-items: center;
 	z-index: 9;
-	position: relative
+	position: relative;
+	transition: all 0.15s ease-out;
+	cursor: pointer;
   }
+
+.readmore:hover {background: var(--base);  -webkit-text-fill-color: var(--opp-base); color:var(--opp-base)}
 
   .readmore span {font-size: 2rem;padding-left: 5px;}
  
@@ -719,7 +723,7 @@ button.glide__arrow--right {
 		.counterbox p {margin-left: 20px; padding-top: 0px;}
 		.counterbox span {padding:0}
 }
-
+.btm-wrap {margin-top: 40px;}
 .btm-wrap2 {display: flex;
     max-width: 70vw;
     width: auto;
@@ -732,7 +736,8 @@ button.glide__arrow--right {
     align-content: center;
     flex-wrap: wrap;
     margin: 0 auto} 
-.email-div, .link-div {font-size: 1.5rem; line-height: 1.5; color:var(--base)}
-.email-div a, .link-div a { color:var(--base); text-decoration: none; transition: all 0.15s ease-in;}
+.email-div, .linkedin-btn {font-size: 1.5rem; line-height: 1.5; color:var(--base)}
+.email-div a, .linkedin-btn a { color:var(--base); text-decoration: none; transition: all 0.15s ease-in;}
 .email-div a:hover {color:var(--balance)}
-.link-div i {color: var(--accent1); font-size: 2rem;}
+.linkedin-btn   { border:1px solid var(--accent1); display: flex; align-items: center; padding:10px 40px; border-radius: 40px; width: max-content; line-height: 1;}
+.linkedin-btn i {color: var(--accent1); font-size: 2rem; line-height: 1;margin-left: 15px;}
