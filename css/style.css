@@ -655,7 +655,7 @@ button.glide__arrow--right {
 }
 .counterwrap {display: flex; gap:15px}
 .counterbox {background-color: var(--opp-base); padding:15px ; border-radius: 20px; font-size: 1.4rem; line-height: 1.2;}
-.counterbox span { font-size: 4rem; line-height: 1; font-weight: bold; display: block; 
+.counterbox span { font-size: 4rem; line-height: 1;   display: block; 
 	  padding:10px 0; border-radius: 5px;
  }
  .counterbox p {padding-top: 15px;}

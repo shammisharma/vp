@@ -153,3 +153,43 @@ new Glide('#testimonials', {
 
 
  
+function countUp(targetClass, durationInSeconds) {
+  const counterElements = document.getElementsByClassName(targetClass);
+
+  for (const counterElement of counterElements) {
+    const targetNumber = parseInt(counterElement.getAttribute('count'), 10);
+    const intervalDuration = durationInSeconds * 1000 / targetNumber; // Calculate interval dynamically
+    let currentCount = 0;
+
+    const intervalId = setInterval(() => {
+      currentCount++;
+      counterElement.innerText = currentCount;
+
+      if (currentCount === targetNumber) {
+        clearInterval(intervalId);
+      }
+    }, intervalDuration);
+  }
+}
+
+// Start counting for all elements with the 'counter' class with a duration of 3 seconds
+
+var target = document.getElementById("counterwrap");
+var options = {
+root: null,
+threshold: [1],
+rootMargin: "-50px",
+};
+
+
+
+const observer = new IntersectionObserver((entries, observer) => {
+  // Check if the target element is intersecting
+  if (entries[0].isIntersecting) {
+      // Call your function with arguments
+      countUp('counter', 3);
+  }
+}, options);
+
+// Start observing the target element
+observer.observe(target);
