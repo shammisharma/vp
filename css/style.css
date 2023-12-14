@@ -20,9 +20,8 @@
 	--balance: hsl(0, 0%, 48%);
 	--opp-base: hsl(0, 0%, 15%);
 	--opp-shade: hsl(0, 0%, 8%);
-	--opp-shade2: hsl(0, 0%, 4%);
-	--opp-shade3: hsl(0, 0%, 12%);
 	--base-opacity: hsla(0, 0%, 0%, 0.90);
+	--full-base: hsl(0, 0%, 3%);
 }
 
 [data-theme="light"] {
@@ -31,9 +30,8 @@
 	--balance: hsl(0, 0%, 48%);
 	--opp-base: hsl(0, 0%, 90%);
 	--opp-shade: hsl(0, 0%, 96%);
-	--opp-shade2: hsl(0, 0%, 100%);
-	--opp-shade3: hsl(0, 0%, 94%);
 	--base-opacity: hsla(0, 0%, 100%, 0.8);
+	--full-base: hsl(0, 0%, 100%);
 }
 
 a{text-decoration: none; color: inherit;}
@@ -245,7 +243,7 @@ section {
 .topcontent {
 	padding-top: 170px;
 	overflow: hidden !important;
-	height: 100vh;
+	 
 }
 
 .w90 {
@@ -723,21 +721,73 @@ button.glide__arrow--right {
 		.counterbox p {margin-left: 20px; padding-top: 0px;}
 		.counterbox span {padding:0}
 }
-.btm-wrap {margin-top: 40px;}
-.btm-wrap2 {display: flex;
+/* .btm-wrap {margin-top: 40px;} */
+.btm-wrap {display: flex; position: relative;
     max-width: 70vw;
     width: auto;
     gap: 100px;
-    border: 1px solid var(--balance);
     padding: 30px;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    margin: 0 auto} 
+    margin: 50px auto 30px auto;
+background-color: var(--full-base);
+z-index: 0;} 
+
+.btm-wrap img {opacity: 0.2; width:auto; max-width: 100%; display: block; margin:20px auto}
+
+
+
+.btm-wrap:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #7842f5 0%, #17bcfd 100% );
+    transform: translate3d(5px, 6px, 0) scale(0.95);
+    filter: blur(30px);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+    height: 100%;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.btm-wrap::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+        
+
 .email-div, .linkedin-btn {font-size: 1.5rem; line-height: 1.5; color:var(--base)}
 .email-div a, .linkedin-btn a { color:var(--base); text-decoration: none; transition: all 0.15s ease-in;}
 .email-div a:hover {color:var(--balance)}
 .linkedin-btn   { border:1px solid var(--accent1); display: flex; align-items: center; padding:10px 40px; border-radius: 40px; width: max-content; line-height: 1;}
 .linkedin-btn i {color: var(--accent1); font-size: 2rem; line-height: 1;margin-left: 15px;}
+
+ 
+
+@media screen and (max-width:1024px) {
+	.btm-wrap {gap:30px; max-width: 90vw;}
+}
+
+.footer {background: var(--opp-shade); padding-bottom: 70px;}
+.footer-links {    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px 80px }
