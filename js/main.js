@@ -194,3 +194,4 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 // Start observing the target element
 observer.observe(target);
+ 
