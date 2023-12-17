@@ -908,22 +908,22 @@ button.glide__arrow--right {
   }
   .topcontent img {
     position: relative;
-    width: 78vw;
+    width: 70vw;
     margin: 0 auto;
     display: block;
-    right: 0;
-    bottom: -100px;
   }
   .topcontent h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1;
-    margin-top: 40px;
+    margin-top: 20px;
+    padding-left: 6vw;
   }
   .topcontent h1 + h1 {
-    padding-left: 0;
+    padding-left: 20vw;
   }
   .topcontent p {
     max-width: none;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -943,7 +943,7 @@ button.glide__arrow--right {
     padding: 0;
   }
 }
-/* .btm-wrap {margin-top: 40px;} */
+
 .btm-wrap {
   display: flex;
   position: relative;
