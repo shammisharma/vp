@@ -527,10 +527,10 @@ section {
 .themechange {
   background-color: var(--base);
   color: var(--opp-shade);
-  width: 40px;
-  height: 40px;
-  font-size: 22px;
-  line-height: 41px;
+  width: 36px;
+  height: 36px;
+  font-size: 21px;
+  line-height: 37px;
   font-weight: 300;
   border-radius: 50%;
   cursor: pointer;
@@ -791,6 +791,7 @@ button.glide__arrow--right {
   display: block;
   padding: 10px 0;
   border-radius: 5px;
+  min-width: 150px;
 }
 .counterbox p {
   padding-top: 15px;
@@ -847,8 +848,8 @@ button.glide__arrow--right {
     flex-wrap: wrap;
   }
   .servs-fx {
-    top: 70%;
-    left: -65%;
+    top: 80%;
+    left: -35%;
   }
   .servs-sec .titleblock,
   .servs-sec .servicesblock {
@@ -1148,6 +1149,8 @@ button.glide__arrow--right {
 .grad-txt {
   font-size: 3rem;
   color: #fff;
+  max-width: 70vw;
+  line-height: 1.2;
 }
 
 .grad-sec img {
@@ -1169,8 +1172,10 @@ button.glide__arrow--right {
   border-radius: 50%;
   word-wrap: break-word;
   align-items: center;
+  justify-content: center;
   line-height: 1;
   font-weight: 600;
+  position: relative;
   z-index: 2;
 }
 .pulse {
@@ -1194,6 +1199,7 @@ button.glide__arrow--right {
 
   .grad-txt {
     font-size: 2rem;
+    max-width: none;
   }
 
   .circle-txt {
