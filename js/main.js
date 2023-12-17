@@ -178,7 +178,7 @@ function countUp(targetClass, durationInSeconds) {
 var target = document.getElementById("counterwrap");
 var options = {
 root: null,
-threshold: [1],
+threshold: 0.8,
 rootMargin: "-50px",
 };
 
