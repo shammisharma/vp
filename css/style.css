@@ -921,6 +921,38 @@ button.glide__arrow--right {
   }
 }
 
+.iconlist {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  gap: 40px;
+}
+
+.iconlist li {
+  font-size: 1.3rem;
+  font-weight: 300;
+  list-style: none;
+  line-height: 1.3;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.iconlist li:before {
+  content: "\eed6";
+  font-family: "IcoFont";
+  color: var(--accent2);
+  font-weight: normal;
+  position: absolute;
+  margin-left: -30px;
+}
+
+.adaptive-img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1023px) {
