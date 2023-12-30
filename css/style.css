@@ -442,8 +442,11 @@ section {
   margin-top: 80px;
 }
 
-.ribbon1 span:nth-child(even),
-.ribbon2 span:nth-child(even) {
+.ribbon1 span:nth-child(even) {
+  color: #1b1b1b;
+}
+
+.ribbon2 span:nth-child(odd) {
   color: #1b1b1b;
 }
 
@@ -973,10 +976,36 @@ button.glide__arrow--right {
 
 .top-banner {
   display: block;
-  background: var(--opp-shade);
+  background: var(--opp-base);
   padding: 210px 0 60px 0;
   font-size: var(--xlarge-size);
   line-height: 1.2;
+}
+
+.columns3 {
+  display: flex;
+  gap: 30px;
+}
+
+.column1 {
+  flex: 1 1 0px;
+}
+
+.icon-box {
+  background-color: var(--opp-shade);
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.icon-box i {
+  font-size: 48px;
+}
+
+.icon-box h3 {
+  margin-top: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 /* MEDIA QUERIES */
@@ -1231,6 +1260,9 @@ button.glide__arrow--right {
     -webkit-columns: 1;
     -moz-columns: 1;
   }
+  .columns3 {
+    flex-direction: column;
+  }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
   .counterwrap {
@@ -1261,8 +1293,9 @@ button.glide__arrow--right {
   }
   .linkedin-btn:hover {
     background-color: var(--accent1);
+    color: var(--opp-base);
   }
   .linkedin-btn:hover i {
-    color: var(--base);
+    color: var(--opp-base);
   }
 }
