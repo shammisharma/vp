@@ -280,6 +280,7 @@ section {
 }
 
 .gradtext {
+  display: inline-block;
   background: var(--accent1);
   background: -webkit-linear-gradient(
     125deg,
@@ -294,6 +295,7 @@ section {
   background: linear-gradient(125deg, var(--accent1) 0%, var(--accent2) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
 }
 
 .gradbg {
@@ -980,6 +982,7 @@ button.glide__arrow--right {
   padding: 210px 0 60px 0;
   font-size: var(--xlarge-size);
   line-height: 1.2;
+  text-align: center;
 }
 
 .columns3 {
